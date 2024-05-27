@@ -1,0 +1,56 @@
+/* ./Pages/SeatBooking/SeatBooking.module.css */
+
+.seatGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+
+  background-color: azure;
+  padding: 20px;
+  margin: 10px;
+}
+
+.seatRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.seat {
+  background-color: #666666;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 35px;
+  height: 30px;
+}
+
+.unavailable {
+  background-color: #f00;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.selected {
+  background-color: #0f0;
+}
+
+.ImageBackground {
+  background-image: url("./court.jpg");
+  background-size: cover;
+  height: 100vh; /* Adjust this as needed */
+  background-size: 100% 100%;
+}
+
+.bookingInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.bookingInfo p {
+  margin-bottom: 10px;
+}

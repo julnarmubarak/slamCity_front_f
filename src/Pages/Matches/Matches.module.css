@@ -1,0 +1,149 @@
+/* Assuming this is your Matches.module.css */
+
+.body {
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f08009;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  flex: 0 0 calc(48% - 20px); /* Adjust the width to 48% minus some margin */
+  max-width: calc(
+    48% - 20px
+  ); /* Adjust the max-width to 48% minus some margin */
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  border-color: #f08009;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.teamContainer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.teamContainer img:hover {
+  transform: scale(1.1);
+}
+
+.vsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.teamNames {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.vsContainer p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: #f08009;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #f08009;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #f08009;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    justify-content: center;
+  }
+
+  .card {
+    flex: 0 0 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+}

@@ -1,0 +1,98 @@
+/* Assuming this is your SignUp.module.css */
+
+.ImageBackground {
+  background-image: url("./Ball.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.SignUpContainer {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.Input {
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.Input:focus {
+  border-color: #f08009;
+  box-shadow: 0px 0px 8px rgba(240, 128, 9, 0.3);
+  outline: none;
+}
+
+.Button {
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f08009;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Button:hover {
+  background-color: #d96f07;
+  transform: translateY(-2px);
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #f08009;
+  font-size: 28px;
+  text-align: center;
+}
+
+.Link {
+  margin-top: 20px;
+  color: #f08009;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.Link:hover {
+  color: #d96f07;
+  text-decoration: underline;
+}
